@@ -3,6 +3,14 @@
 if (!defined('sugarEntry')) {
     define('sugarEntry', true);
 }
+
+if (PHP_MAJOR_VERSION >= 7) {
+  set_error_handler(function ($errno, $errstr) {
+    return strpos($errstr, 'Declaration of') === 0 ||
+           strpos($errstr, 'A non-numeric value encountered') === 0;
+  }, E_WARNING);
+}
+
 /**
  *
  * SugarCRM Community Edition is a customer relationship management program developed by
