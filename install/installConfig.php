@@ -794,7 +794,7 @@ EOQ;
 
                 <div class="formrow">
                     <label>{$mod_strings['LBL_MAIL_SMTPPASS']}</label>
-                        <input type="password" name="smtp_tab_other[mail_smtppass]" id="smtp_tab_other__mail_smtppass" size="25" maxlength="64" value="" tabindex="1">
+                        <input type="password" name="smtp_tab_other[mail_smtppass]" id="smtp_tab_other__mail_smtppass" size="25" maxlength="80" value="" tabindex="1">
                 </div>
 
                 <div class="clear"></div>

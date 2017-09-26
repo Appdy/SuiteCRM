@@ -111,7 +111,7 @@
                                 </td>
                                 <td width="20%" scope="row" nowrap="nowrap"><span id="mail_smtpssl_label">{$app_strings.LBL_EMAIL_SMTP_SSL_OR_TLS}</span></td>
                                 <td width="30%">
-                                <select id="mail_smtpssl" name="mail_smtpssl" tabindex="501" 
+                                <select id="mail_smtpssl" name="mail_smtpssl" tabindex="501"
                                     onclick="javascript:SUGAR.email2.accounts.smtp_setDefaultSMTPPort();">{$MAIL_SSL_OPTIONS}</select>
                                 </td>
                             </tr>
@@ -124,7 +124,7 @@
                             <tr id="smtp_auth2">
                                 <td width="20%" scope="row" nowrap="nowrap"><span id="mail_smtppass_label">{sugar_translate module='Emails' label='LBL_MAIL_SMTPPASS'}</span> <span class="required">{$app_strings.LBL_REQUIRED_SYMBOL}</span></td>
                                 <td width="30%" ><slot>
-                                <input type="password" id="mail_smtppass" name="mail_smtppass" size="25" maxlength="64" abindex='1'>
+                                <input type="password" id="mail_smtppass" name="mail_smtppass" size="25" maxlength="80" abindex='1'>
                                 <a href="javascript:void(0)" id='mail_smtppass_link' onClick="SUGAR.util.setEmailPasswordEdit('mail_smtppass')" style="display: none">{$app_strings.LBL_CHANGE_PASSWORD}</a>
                                 </slot></td>
                                 <td >&nbsp;</td>

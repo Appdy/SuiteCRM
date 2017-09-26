@@ -173,7 +173,7 @@ function change_state(radiobutton) {
                        <tr id="smtp_auth2">
                             <td width="20%" scope="row"><span id="mail_smtppass_label">{$MOD.LBL_MAIL_SMTPPASS}</span> <span class="required">{$APP.LBL_REQUIRED_SYMBOL}</span></td>
                             <td width="30%" >
-                            <input type="password" id="mail_smtppass" name="mail_smtppass" size="25" maxlength="64" tabindex='1'>
+                            <input type="password" id="mail_smtppass" name="mail_smtppass" size="25" maxlength="80" tabindex='1'>
                             <a href="javascript:void(0)" id='mail_smtppass_link' onClick="SUGAR.util.setEmailPasswordEdit('mail_smtppass')" style="display: none">{$APP.LBL_CHANGE_PASSWORD}</a>
                             </td>
                             <td width="20%">&nbsp;</td>
@@ -201,7 +201,7 @@ function change_state(radiobutton) {
 		    <td width="15%">&nbsp;</td>
             <td width="40%">&nbsp;</td>
 		    <td width="40%">&nbsp;</td>
-		</tr>		
+		</tr>
 </table>
 <table width="100%" border="0" cellspacing="0" cellpadding="0" class="edit view">
 	<tr>
@@ -591,7 +591,7 @@ function notify_setrequired(f) {
 	return true;
 }
 
-function setDefaultSMTPPort() 
+function setDefaultSMTPPort()
 {
     if (!first_load)
     {

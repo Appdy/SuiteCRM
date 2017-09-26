@@ -252,7 +252,7 @@
                 <span class="required">{$app_strings.LBL_REQUIRED_SYMBOL}</span>
             </td>
             <td>
-                <input type="password" id="inbound_mail_smtppass" name="mail_smtppass" size="30" maxlength="64">
+                <input type="password" id="inbound_mail_smtppass" name="mail_smtppass" size="30" maxlength="80">
             </td>
         </tr>
 
