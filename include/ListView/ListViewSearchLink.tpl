@@ -54,7 +54,9 @@
             </a>
             <ul class="subnav">
                 {foreach from=$savedSearchData.options key=id item=option}
+                  {if $id != '_none'}
                     <li><a href="javascript:void(0)" class="parent-dropdown-action-handler"{if $id!=$savedSearchData.selected} onclick="SUGAR.savedViews.shortcutDropdown('{$id}', '{$currentModule}');"{/if}>{$option}{if $id==$savedSearchData.selected}&nbsp;&#10004{/if}</a></li>
+                  {/if}
                 {/foreach}
             </ul>
             <span></span>
