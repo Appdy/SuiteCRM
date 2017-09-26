@@ -182,6 +182,7 @@ function printOriginalValues($focus){
         foreach($subs_arr as $name => $id){
             $subs_vals .= ", $id";
         }
+        $return_arr=array();
         $return_arr[]=$subs_vals;
 
         foreach($unsubs_arr as $name => $id){
